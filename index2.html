@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Городская больница - Часть 2</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2>Запись на приём</h2>
+            <section class="appointment">
+                <div class="form">
+                    <h3>Заполните форму для записи онлайн</h3>
+                    <form action="#" method="post">
+                        <label>
+                            <p>Ваше ФИО</p>
+                            <input type="text" name="patientname" required placeholder="Сергеев Сергей Сергеевич" pattern="[А-Яа-яЁёa-zA-Z ]+">
+                        </label>
+                        <div class="form-row">
+                            <label class="form-div">
+                                <p>Номер телефона</p>
+                                <input type="tel" name="phonenumber" required placeholder="+7 (999) 999-99-99" pattern="^\+7\d{10}$">
+                            </label>
+                            <label class="form-div">
+                                <p>Дата рождения</p>
+                                <input type="date" required>
+                            </label>
+                        </div>
+                        <label>
+                            <p>Специализация врача</p>
+                            <select id="choose_specialization" required>
+                                <option>Выберите специалиста</option>
+                                <option>Терапевт Иванов И.И. (каб. 101)</option>
+                                <option>Терапевт Петров П.П. (каб. 112)</option>
+                                <option>Невролог Сергеев С.С. (каб. 222)</option>
+                            </select>
+                        </label>
+                        <div class="form-row">
+                            <label class="form-div">
+                                <p>Дата приёма</p>
+                                <input type="date" required>
+                            </label>
+                            <label class="form-div">
+                                <p>Время</p>
+                                <select required>
+                                    <option>Выберите время</option>
+                                    <option>08:00</option><option>08:20</option><option>08:40</option>
+                                    <option>09:00</option><option>09:20</option><option>09:40</option>
+                                    <option>10:00</option><option>10:20</option><option>10:40</option>
+                                    <option>11:00</option><option>11:20</option><option>11:40</option>
+                                    <option>12:00</option><option>12:20</option><option>12:40</option>
+                                    <option>13:00</option><option>13:20</option><option>13:40</option>
+                                    <option>14:00</option><option>14:20</option><option>14:40</option>
+                                    <option>15:00</option><option>15:20</option><option>15:40</option>
+                                    <option>16:00</option>
+                                </select>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn-submit">Отправить</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footerColumn">
+            <h4>Контакты</h4>
+            <ul>
+                <li>г. Тюмень, ул. Больничная, д. 103</li>
+                <li><a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
+                <li><a href="mailto:hospital@mail.ru">hospital@mail.ru</a></li>
+                <li>
+                    <a href="#">MAX</a> | 
+                    <a href="#">VK</a>
+                </li>
+            </ul>
+        </div>    
+        <div class="footerBottom">
+            <p>&copy; 2026 Hospital. Все права защищены.</p>
+            <p>Лицензия №ЛО-77-01-000000.</p>
+        </div>
+    </footer>
+</body>
+</html>
